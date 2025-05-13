@@ -1,15 +1,14 @@
 import math
 
-P = int(input(f"Calculo de utilidades. \n Ingresar el Precio de Suscripción Normal (la Suscripción Premium tiene un costo 50% mayor): $"))
-Pp = P * 1.5
-print(f"Suscripción Normal: ${P:.0f} \nSuscripción Premium: ${Pp:.0f}")
-Un = int(input(f"¿Cuál es la cantidad de usuarios con Suscripción Normal del último año?: "))
-Up = int(input(f"¿Cuál es la cantidad de usuarios con Suscripción Premium del último año?: "))
-GT = int(input(f"¿Cuál es el gasto total anual?: $"))
+#Parte 2.3, considerando solo la fórmula original (utilidades = P * U - GT)
 
-utilidades = (P * Un) + (Pp * Up) - GT
+P = float(input(f"Calculo de utilidades. \n Ingresar el Precio de suscripción: $"))
+U = int(input(f"¿Cuál es la cantidad total de usuarios del último mes?: "))
+GT = int(input(f"¿Cuál es el gasto total mensual?: $"))
 
-print(f"Las Utilidades del último año es de ${utilidades:.0f}")
+utilidades = P * U - GT
+
+print(f"Las Utilidades del último mes es de ${utilidades:.0f}")
 
 ut_past = int(input(f"¿Cuáles fueron las utilidades del año anterior? (el valor ingresado debe ser distinto de 0): $"))
 

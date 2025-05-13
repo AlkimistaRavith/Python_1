@@ -1,5 +1,7 @@
 import math
 
+#Parte 2.2, para calculo con usuarios normales y premium
+
 P = float(input(f"Calculo de utilidades. \n Ingresar el Precio de Suscripción Normal (la Suscripción Premium tiene un costo 50% mayor): $"))
 print(f"Suscripción Normal: ${P} \nSuscripción Premium: ${P*1.5}")
 Un = int(input(f"¿Cuál es la cantidad de usuarios con Suscripción Normal del último año?: "))

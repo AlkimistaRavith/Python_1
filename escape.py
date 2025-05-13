@@ -1,6 +1,6 @@
 import math
 
-g = 9.8
+# 1.1 calculo para velocidad de escape.
 
 planeta = input("Calculemos la velocidad de escape de un planeta. \n Primero, indica el nombre del planeta: ")
 r = int(input(f"Ahora debemos conocer su radio (que debe estar redondeado en Kilómetros). \n ¿Cuál es el radio de {planeta} en [Km]?: "))
